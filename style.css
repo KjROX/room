@@ -38,6 +38,7 @@ nav {
 }
 .shop-now {
   padding: 5rem 2rem;
+  position: relative;
 }
 .shop-now h1 {
   font-size: 2.5rem;
@@ -56,6 +57,20 @@ nav {
   margin-right: 3rem;
   font-weight: 500;
   letter-spacing: 1rem;
+}
+.angle {
+  display: flex;
+  position: absolute;
+  top: -50px;
+  right: 0;
+}
+.angle-left {
+  background: black;
+  padding: 1rem 2rem;
+}
+.angle-right {
+  background: black;
+  padding: 1rem 2rem;
 }
 .image-dark {
   object-fit: cover;

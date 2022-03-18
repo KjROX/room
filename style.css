@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Spartan", sans-serif;
+}
+.full {
+  min-height: 100%;
+}
+.hero {
+  width: 100%;
+  position: relative;
+}
+nav {
+  position: absolute;
+  width: 100%;
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+}
+.hamburger {
+  position: absolute;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.background {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+.shop-now {
+  padding: 5rem 2rem;
+}
+.shop-now h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.shop-now p {
+  color: hsl(0, 0%, 63%);
+  margin-bottom: 3rem;
+  line-height: 1.5rem;
+}
+.arrow {
+  display: flex;
+}
+.arrow h2 {
+  font-size: 1rem;
+  margin-right: 3rem;
+  font-weight: 500;
+  letter-spacing: 1rem;
+}
+.image-dark {
+  object-fit: cover;
+  object-position: center;
+}
+.about-our-furniture {
+  padding: 5rem 2rem;
+}
+.about-our-furniture h3 {
+  letter-spacing: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.about-our-furniture p {
+  color: hsl(0, 0%, 63%);
+  line-height: 1.5rem;
+}
+.image-light {
+  object-fit: cover;
+  object-position: center;
+}

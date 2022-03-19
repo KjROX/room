@@ -35,8 +35,15 @@ nav {
   object-fit: cover;
   object-position: center;
   width: 100%;
+  height: 100%;
+}
+.links {
+  display: none;
 }
 .shop-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 5rem 2rem;
   position: relative;
 }
@@ -73,11 +80,15 @@ nav {
   padding: 1rem 2rem;
 }
 .image-dark {
+  width: 100%;
   object-fit: cover;
   object-position: center;
 }
 .about-our-furniture {
   padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .about-our-furniture h3 {
   letter-spacing: 0.8rem;
@@ -88,6 +99,59 @@ nav {
   line-height: 1.5rem;
 }
 .image-light {
+  width: 100%;
   object-fit: cover;
   object-position: center;
+}
+@media (min-width: 809px) {
+  .full {
+    display: grid;
+    grid-template-columns: 30% 30% 10% 30%;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .hero {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    justify-content: flex-start;
+  }
+  .hamburger {
+    display: none;
+  }
+  .logo {
+    justify-content: flex-start;
+    width: 20%;
+  }
+  .links {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+  }
+  .links li {
+    color: white;
+    list-style: none;
+  }
+  .shop-now {
+    grid-column: 3/5;
+    grid-row: 1/3;
+    position: relative;
+    padding: 5rem 4rem;
+  }
+  .angle {
+    top: 90.5%;
+    left: 0;
+  }
+  .image-dark {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: 100%;
+  }
+  .about-our-furniture {
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+  .image-light {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    height: 100%;
+  }
 }
